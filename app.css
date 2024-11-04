@@ -1,0 +1,67 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #1c1e22; /* Darker background for better contrast */
+    color: white;
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+}
+
+.calculator {
+    background: rgba(40, 44, 50, 0.8); /* Slightly darker semi-transparent background */
+    padding: 30px; /* Increased padding for a more spacious feel */
+    border-radius: 15px; /* More rounded corners */
+    box-shadow: 0 8px 40px rgba(0, 0, 0, 0.5); /* Deeper shadow for depth */
+    width: 320px; /* Slightly wider */
+}
+
+#display {
+    width: 100%;
+    height: 60px; /* Increased height for better visibility */
+    font-size: 28px; /* Larger font size for the display */
+    text-align: right;
+    margin-bottom: 15px; /* More space below the display */
+    border: none;
+    padding: 10px; /* More padding for a comfortable touch */
+    border-radius: 10px; /* More rounded corners */
+    background-color: #2b2d31; /* Darker background for the display */
+    color: #61dafb; /* Brighter color for text */
+    box-shadow: inset 0 2px 10px rgba(0, 0, 0, 0.5); /* Inner shadow for depth */
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px; /* Increased gap between buttons */
+}
+
+button {
+    height: 60px; /* Increased height for better accessibility */
+    font-size: 22px; /* Larger font size */
+    border: none;
+    border-radius: 10px; /* More rounded corners */
+    background-color: #61dafb; /* Bright button color */
+    color: black;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.1s; /* Smooth transitions */
+}
+
+button:hover {
+    background-color: #21a1f1; /* Hover color */
+    transform: scale(1.05); /* Slight scale effect on hover */
+}
+
+button:active {
+    transform: scale(0.95); /* Slight shrink effect on button press */
+}
+
+/* Additional styles for specific buttons (e.g., operator buttons) */
+button.operator {
+    background-color: #f39c12; /* Distinct color for operator buttons */
+}
+
+button.operator:hover {
+    background-color: #e67e22; /* Darker on hover */
+}
